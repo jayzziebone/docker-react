@@ -2,7 +2,7 @@
 # We used the first phase to build our app then copy the file in the nginx container that will serve our content
 FROM node:lts-alpine as builder
 
-WORKDIR /app
+WORKDIR '/app'
 
 COPY package.json .
 RUN npm install
